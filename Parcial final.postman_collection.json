@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "5f405b90-5fdd-492b-ad49-dc19db26cbe5",
+		"name": "Parcial final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27865108"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Laurence Abernathy\",\r\n    \"email\":\"kiley.torphy@example.net\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|xFvAeH5l6rkY4JFrSe3EZCgCqrsIDdl0hIbqXDszcbddcac9",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/news",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|xFvAeH5l6rkY4JFrSe3EZCgCqrsIDdl0hIbqXDszcbddcac9",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/news/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"news",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|xFvAeH5l6rkY4JFrSe3EZCgCqrsIDdl0hIbqXDszcbddcac9",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"title\": \"Maxime sapiente aut hic sapiente non officiis sequi nobis.\",\r\n            \"body\": \"Aliquam cupiditate sed illo impedit repudiandae. Quisquam rerum necessitatibus perferendis sed. Ut ullam dolor quo et facere repellat.\",\r\n            \"published_at\": \"2009-09-03 10:51:10\",\r\n            \"category\": \"quia\",\r\n            \"source\": \"quibusdam\",\r\n            \"author\": \"Dariana Kub Sr.\",\r\n            \"url\": \"http://hintz.org/placeat-enim-vitae-officiis-dolorem-ex-corporis.html\",\r\n            \"image_url\": \"https://via.placeholder.com/640x480.png/00aa99?text=culpa\",\r\n            \"summary\": \"Numquam voluptatem ipsam dolores perferendis veniam quos repellendus. Inventore est tempore delectus ipsam. Fugiat enim ea reiciendis beatae. Temporibus qui facere quo debitis rerum explicabo unde.\",\r\n            \"featured\": true,\r\n            \"views\": 208,\r\n            \"likes\": 233,\r\n            \"category_id\": 4\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/news",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|xFvAeH5l6rkY4JFrSe3EZCgCqrsIDdl0hIbqXDszcbddcac9",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"title\": \"Maxime sapiente aut hic sapiente non officiis sequi nobis.\",\r\n            \"body\": \"Aliquam cupiditate sed illo impedit repudiandae. Quisquam rerum necessitatibus perferendis sed. Ut ullam dolor quo et facere repellat.\",\r\n            \"published_at\": \"2009-09-03 10:51:10\",\r\n            \"category\": \"quia\",\r\n            \"source\": \"quibusdam\",\r\n            \"author\": \"Dariana Kub Sr.\",\r\n            \"url\": \"http://hintz.org/placeat-enim-vitae-officiis-dolorem-ex-corporis.html\",\r\n            \"image_url\": \"https://via.placeholder.com/640x480.png/00aa99?text=culpa\",\r\n            \"summary\": \"Numquam voluptatem ipsam dolores perferendis veniam quos unde.\",\r\n            \"featured\": true,\r\n            \"views\": 208,\r\n            \"likes\": 233,\r\n            \"category_id\": 4\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/news/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"news",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|xFvAeH5l6rkY4JFrSe3EZCgCqrsIDdl0hIbqXDszcbddcac9",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/news/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"news",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
